@@ -1,0 +1,33 @@
+.descripcion h2{
+font-size: 30px;
+
+}
+.home-vendidas{
+
+
+}
+
+.vendidas{
+position: relative;
+right:30%;
+}
+.card{
+  position: relative;
+  left:45%;
+  top: -300px;
+ }
+
+ .card img{
+   width: 40px;
+   height: 80px;
+ }
+
+#uno{
+  color: #1f92c1;
+}
+#dos{
+  color: #1fc1b7;
+}
+#tres{
+  color: #2fb56d;
+}

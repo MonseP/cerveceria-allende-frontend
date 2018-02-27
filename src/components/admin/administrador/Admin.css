@@ -1,0 +1,54 @@
+.span-menu{
+color: black;
+}
+.span-menu:hover{
+color: #6b6956;
+}
+
+.home-prove{
+  margin:0 auto;
+ display: flex;
+ flex-direction: row;
+   flex-wrap: wrap;
+   padding: 10px;
+}
+
+.admin-home{
+  top: 100px;
+  width:100%;
+  height: 150px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url('http://cerveceriaallende.mx/wp-content/uploads/2014/10/cerveceria-allende.jpg');
+}
+
+.admin-home h3{
+text-align:center;
+position: relative;
+top: 30%;
+  font-size: 26px;
+  color: white;
+}
+
+.prove-home{
+  width: 150%;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.buscador{
+  margin:0 auto;
+ display: flex;
+ flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+}
+
+@media screen and (max-width: 420px) {
+  .prove-home{
+width: 400px;
+height: 400px;
+  }
+
+  }
