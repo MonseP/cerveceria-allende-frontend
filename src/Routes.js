@@ -7,6 +7,8 @@ import DistriHome from './components/admin/distribuidores/DistriHome';
 import DistriDetalle from './components/admin/distribuidores/detalle/DistriDetalle';
 import CatalogoHome from './components/admin/catalogo/CatalogoHome';
 import Vendidas from './components/admin/distribuidores/detalle/charts/Vendidas';
+import VentasHome from './components/admin/ventas/VentasHome';
+import ProyeccionesHome from './components/admin/proyecciones/ProyeccionesHome';
 const Routes = () => (
     <Switch>
         <Route exact path="/" component={LoginHome}/>
@@ -15,6 +17,8 @@ const Routes = () => (
         <Route path="/detalle" component={DistriDetalle}/>
         <Route path="/catalogo" component={CatalogoHome}/>
         <Route path="/vendidas" component={Vendidas}/>
+        <Route path="/ventas" component={VentasHome}/>
+        <Route path="/proyeccion" component={ProyeccionesHome}/>
 
 
 

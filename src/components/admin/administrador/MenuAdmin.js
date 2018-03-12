@@ -1,52 +1,37 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css'
 import './Admin.css';
-import {Link, NavLink} from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
 import { Menu, Icon } from 'antd';
+import {Link, NavLink} from 'react-router-dom';
+const { SubMenu } = Menu;
+
+
 
 
 
 class MenuAdmin extends React.Component {
-  state = {
-    mode: 'inline',
-    theme: 'light',
-  }
 
   render() {
     return (
       <div className="menu-admin">
-
         <Menu
-          style={{ width: 256 }}
-          defaultSelectedKeys={['1']}
-          defaultOpenKeys={['sub1']}
-          mode={this.state.mode}
-          theme={this.state.theme}
-        >
-          <Menu.Item key="1">
-          <Icon type="user" />
-            <span className="span-menu"> <NavLink  className="span-menu" to="/admin">Distribuidores</NavLink></span>
-          </Menu.Item>
+          mode="inline"
 
-          <Menu.Item key="2">
-          <Icon type="area-chart" />
-          <span className="span-menu"> <NavLink  className="span-menu" to="/ventas">Ventas</NavLink></span>
-          </Menu.Item>
-
-          <Menu.Item key="3">
-          <Icon type="sync" />
-            <span className="span-menu"> <NavLink  className="span-menu" to="/catalogo">Actualizar Catálogo</NavLink></span>
-          </Menu.Item>
+          >
 
 
+  <div className="vertical-menu">
+    <a className="active">Menú</a>
+ <Link to="/admin" className="link"> <a> <Icon type="user" />  Distribuidores</a></Link>
+  <Link to="/ventas"  className="link" >  <a>  <Icon type="area-chart" /> Ventas</a> </Link>
+   <Link to="/catalogo"  className="link" > <a>   <Icon type="sync" /> Catálogo</a> </Link>
+   <Link to="/proyeccion"  className="link">  <a> <Icon type="line-chart" /> Proyecciones</a> </Link>
 
 
-            <Menu.Item key="4">
-            <Icon type="pie-chart" />
-            <span className="span-menu"> <NavLink  className="span-menu" to="/proyeccion">Proyecciones</NavLink></span>
-            </Menu.Item>
-
+            </div>
         </Menu>
+
       </div>
     );
   }

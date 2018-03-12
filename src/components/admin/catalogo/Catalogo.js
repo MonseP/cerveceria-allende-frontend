@@ -12,7 +12,7 @@ export const Catalogo = () => {
       <div style={{ padding: '30px' , width:'900px'}}>
       <Row gutter={16} >
         <Col span={8} >
-          <Card title="Brown Ale" bordered={true}  style={{ borderColor: '#bcbcba'}}>
+          <Card title="Brown Ale" bordered={true}  style={{ borderColor: '#eeeeec'}}>
             <div className="hover-bio-wrapper">
             <div className="hover-bio">
             <figure className="hover-bio">
@@ -28,7 +28,7 @@ export const Catalogo = () => {
         </Col>
 
         <Col span={8} >
-          <Card title="Agave Lager" bordered={true}  style={{ borderColor: '#bcbcba'}}>
+          <Card title="Agave Lager" bordered={true}  style={{ borderColor: '#eeeeec'}}>
             <div className="hover-bio-wrapper">
             <div className="hover-bio">
             <figure className="hover-bio">
@@ -43,7 +43,7 @@ export const Catalogo = () => {
           </Card>
         </Col>
         <Col span={8} >
-          <Card title="Golden Ale" bordered={true}  style={{ borderColor: '#bcbcba'}}>
+          <Card title="Golden Ale" bordered={true}  style={{ borderColor: '#eeeeec'}}>
             <div className="hover-bio-wrapper">
             <div className="hover-bio">
             <figure className="hover-bio">

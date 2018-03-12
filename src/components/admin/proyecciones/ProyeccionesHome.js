@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ChartVentas from './ChartVentas';
+import ChartPro from './ChartPro';
 import MenuAdmin from '../administrador/MenuAdmin';
 import '../administrador/Admin.css';
-import './Ventas.css';
+import './Proyeccion.css';
 
 
 
@@ -18,13 +18,13 @@ class VentasHome extends React.Component {
 
                           <div className="home-prove">
                             <div className="admin-home">
-                              <h3> Administrador</h3>
+                              <h3>Administrador</h3>
 
                             </div>
                                     <MenuAdmin/>
-                            <div className="home-ventas">
-                              <ChartVentas/>
-                              </div>
+
+                              <ChartPro/>
+                            
                           </div>
 
 

@@ -31,11 +31,7 @@ class Vendidas extends Component {
         return (
             <div className="home-vendidas">
             <div  className="vendidas">
-                      <Pie
-                  data={salesPieData}
-                  height={294}
-
-                     />
+                  
             </div>
 
             <Card style={{ width: 300 }} className="card" >
@@ -48,16 +44,23 @@ class Vendidas extends Component {
 
             <ChartCard
 
-    hasLegend
-    title="Total :"
-    subTitle="Total: "
-    total={yuan(salesPieData.reduce((pre, now) => now.y + pre, 0))}
-    data={salesPieData}
-    valueFormat={val => yuan(val)}
-    height={294}
 
 
-    />
+
+  >
+    <Pie
+
+
+      hasLegend
+      title="Total :"
+      subTitle="Total: "
+      total={yuan(salesPieData.reduce((pre, now) => now.y + pre, 0))}
+      data={salesPieData}
+      valueFormat={val => yuan(val)}
+      height={294}/>
+
+
+  </ChartCard>
 
     </Card>
 

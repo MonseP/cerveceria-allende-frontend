@@ -20,11 +20,16 @@ class AdminHome extends React.Component {
 
                   <div className="home-prove">
                     <div className="admin-home">
+                  
+
                       <h3> Administrador</h3>
 
                     </div>
+
+
                     <MenuAdmin/>
                         <DistriHome/>
+
                   </div>
 
 

@@ -7,10 +7,10 @@ const { Meta } = Card;
 export const CatalogoDos = () => {
 
     return (
-      <div style={{ background: '#fdfdfa', padding: '30px' }}>
+      <div style={{padding: '30px' }}>
       <Row gutter={16}>
         <Col span={8}>
-          <Card title="IPA" bordered={true}  style={{ borderColor: '#bcbcba'}} >
+          <Card title="IPA" bordered={true}  style={{ borderColor: '#eeeeec'}} >
             <div className="hover-bio-wrapper">
             <div className="hover-bio">
             <figure className="hover-bio">
@@ -24,12 +24,13 @@ export const CatalogoDos = () => {
             </div>
           </Card>
         </Col>
-        <Col span={8}>
+      {/*  <Col span={8}>
           <Card title="Card title" bordered={true}  style={{ borderColor: '#bcbcba'}} >Card content</Card>
         </Col>
         <Col span={8}>
           <Card title="Card title" bordered={true}  style={{ borderColor: '#bcbcba'}} >Card content</Card>
         </Col>
+      */}
 
       </Row>
     </div>
